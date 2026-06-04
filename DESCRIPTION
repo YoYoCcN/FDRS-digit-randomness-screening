@@ -1,0 +1,26 @@
+Package: FDRS
+Type: Project
+Title: Fabrication-risk Digit Randomness Screening Framework
+Version: 0.1.0
+Authors@R: c(
+    person("Zhuohua", "Cao", email = "1247166997cc@gmail.com", role = c("aut", "cre")),
+    person("Hanyong", "Jin", role = "aut")
+)
+Description: A statistical and machine-learning-assisted framework for screening non-random decimal digit-pattern irregularities in raw numerical research data. The framework includes single-digit tests, joint digit-combination analysis, progressive subsampling, feature engineering, semi-supervised machine-learning risk scoring, and visualization. It is intended for screening and prioritization only, not as standalone evidence of fabrication or misconduct.
+License: MIT
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.2.0)
+Imports:
+    ggplot2,
+    dplyr,
+    tidyr,
+    stringr,
+    scales,
+    ranger,
+    glmnet,
+    e1071,
+    isotree,
+    pROC,
+    ggrepel
